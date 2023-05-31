@@ -25,3 +25,24 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.active {
+  font-weight: 900;
+  color: white;
+  padding-inline: 2rem;
+  transition-duration: 300ms;
+}
+
+.active:hover {
+  color: rgb(219, 219, 219);
+  transition-duration: 300ms;
+}
+.non-active {
+  color: gray;
+  transition-duration: 300ms;
+}
+
+.non-active:hover {
+  color: rgb(179, 179, 179);
+  transition-duration: 300ms;
+}

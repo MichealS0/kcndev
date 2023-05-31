@@ -1,14 +1,31 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Home(){
   return(
-    <section className="bg-white dark:bg-gray-900 items-center">
-      <div className=" py-4 mx-auto max-w-screen-xl text-center lg:py-5 ">
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md-text-5xl lg:text-6xl dark:text-white">The big bossMan</h1>
-        <p className="mb-8 text-lg font-normal text-gray-600 lg:px-48 sm:px-16 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam ab maxime asperiores aspernatur reiciendis porro quidem est. Doloremque cumque, ducimus sapiente ipsam quia pariatur adipisci tenetur optio ut illo dicta praesentium. Odio quam at eveniet ea eaque voluptas? Magnam consectetur dignissimos tenetur delectus, alias deleniti. Ab nihil magni fugit?</p>
-        <div className=" flex flex-col mb-8 gap-5 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-x-4">
-          <Link href='/more' className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">More</Link>
-          <Link href='/projects'>Projects</Link>
+    <section className=" translate-y-[100px]">
+      <div className="justify-around mt-auto lg:flex">
+        <div className=" items-center text-center w-fit my-auto mx-auto">
+          <div>
+            <p className="font-extralight">My</p>
+            <h1 className=" text-[72px] font-extrabold"><span className=" hover:text-gray-900 hover:px-3 duration-150 cursor-pointer">Programming</span> Journal</h1>
+            <p className="max-w-[600px] text-center items-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et eros ac risus dictum viverra. Suspendisse potenti. Duis tempus orci ut lorem gravida vulputate. Proin.</p></div>
+            <div className="flex justify-around mt-10 w-fit mx-auto gap-8">
+              <div className=" p-3 px-5 bg-gray-500 rounded-xl hover:bg-gray-900 duration-150">
+                <Link href='/contact' className=" text-2xl">Contact</Link>
+              </div>
+              <div className=" p-3 px-5 border border-gray-500 rounded-xl hover:bg-gray-900 hover:border-gray-900 duration-150 ">
+                <Link href='/projects' className=" text-2xl">Projects</Link>
+              </div>
+            </div>
+        </div>
+        <div className="mx-auto mix-blend-screen">
+          <Image
+           src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80"
+           height={900}
+           width={600}
+           alt="Hero Image"
+          />
         </div>
       </div>
     </section>
